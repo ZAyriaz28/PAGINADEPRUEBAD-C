@@ -320,6 +320,31 @@ Header Style
 --------------------------------------------- 
 */
 
+.logo h1 {
+  display: flex;
+  gap: 5px;
+  /* Espacio entre "DyC" y "Cruz" */
+  align-items: center;
+  justify-content: center;
+  /* opcional, para centrar horizontalmente */
+  margin: 0;
+}
+
+.logo h1 span {
+  display: inline;
+  font-weight: bold;
+  font-size: 35px;
+  /* o el tamaño que quieras */
+}
+
+.rojo {
+  color: red;
+}
+
+.gris {
+  color: #555555;
+}
+
 .sub-header {
   background-color: #fff;
   padding: 10px 0px;
