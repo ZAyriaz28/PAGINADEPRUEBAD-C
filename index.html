@@ -72,8 +72,37 @@ https://templatemo.com/tm-591-villa-agency
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
                     <a href="index.html" class="logo">
-                      <h1><span class="rojo">D&C</span> <span class="gris">Cruz</span></h1>
+                      <h1 translate="no">
+                        <span class="rojo">D&C</span> <span class="gris">Cruz</span>
+                      </h1>
                     </a>
+                    
+                    <style>
+                      .logo h1 {
+                        display: flex;
+                        gap: 5px;
+                        /* Espacio entre "D&C" y "Cruz" */
+                        align-items: center;
+                        justify-content: center;
+                        /* opcional, para centrar horizontalmente */
+                        margin: 0;
+                      }
+                    
+                      .logo h1 span {
+                        display: inline;
+                        font-weight: bold;
+                        font-size: 35px;
+                        /* o el tamaño que quieras */
+                      }
+                    
+                      .rojo {
+                        color: red;
+                      }
+                    
+                      .gris {
+                        color: #555555;
+                      }
+                    </style>
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
