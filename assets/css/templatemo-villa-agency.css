@@ -87,16 +87,15 @@ a {
   text-decoration: none !important;
 }
 
-h1 {
-
-}
-
-h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
   color: #1e1e1e;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
   font-weight: 700;
+  text-align: center;
+  word-wrap: break-word;
 }
+
 
 ul {
   margin-bottom: 0px;
@@ -780,11 +779,11 @@ Banner Style
 }
 
 .main-banner .item h2 {
-  font-size: 63px;
+  font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
   color: #fff;
-  line-height: 72px;
+  line-height: 50px;
   width: 50%;
   margin-bottom: 0px;
 }
