@@ -1,66 +1,97 @@
 .album-gallery {
-  padding: 20px;
-  background-color: #fafafa;
-  border-radius: 12px;
-}
-
-.album-thumb {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  border: 2px solid #ffffff; /* borde sutil gris claro */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-  object-fit: cover;
-  cursor: pointer;
-}
-
-.album-thumb:hover {
-  transform: scale(1.03);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-  border-color: #ff6f00; /* borde naranja al hover, para destacar */
-}
-
-
-/* Opcional: descripción si la mantenés */
-.project-description {
-  margin-top: 30px;
-  background: #ffffff;
-  padding: 20px;
-  border-radius: 10px;
-  color: #333;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-}
-
-.project-description h4 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  color: #444;
-}
-
-.project-description p {
-  font-size: 1rem;
-  line-height: 1.5;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 .album-gallery .row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px; /* espacio entre imágenes */
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 12px; /* más compacto pero elegante */
+  align-items: stretch;
 }
 
 .album-thumb {
-  height: 200px;        /* altura fija */
-  width: 300px;         /* ancho fijo, ajustalo según necesites */
-  object-fit: cover;    /* recorta la imagen para llenar el espacio sin distorsionar */
-  border-radius: 8px;   /* bordes suaves, opcional */
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15); /* sombra leve para estilo */
-  cursor: pointer;      /* opcional, para que parezca clickeable */
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: #f2f2f2;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  aspect-ratio: 4 / 3; /* todas con misma proporción visual */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.album-thumb img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* no recorta, las mantiene completas */
   transition: transform 0.3s ease;
 }
 
 .album-thumb:hover {
-  transform: scale(1.05); /* efecto hover suave */
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.project-description {
+  margin-top: 40px;
+  padding: 30px;
+  border-radius: 14px;
+  background: #f8f9fb;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+  color: #333;
+}
+
+.project-description h4 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.project-description p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+/* Lupa (ícono de zoom) */
+.zoom-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: white;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 2;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Sombra oscura encima */
+.album-thumb::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+  border-radius: 12px;
+}
+
+/* Hover muestra todo */
+.album-thumb:hover .zoom-icon {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+.album-thumb:hover::after {
+  opacity: 1;
 }
 
