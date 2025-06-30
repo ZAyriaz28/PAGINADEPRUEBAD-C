@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon_io/favicon-16x16.png">
@@ -17,6 +19,8 @@
     <link rel="stylesheet" href="../assets/css/templatemo-villa-agency.css">
     <link rel="stylesheet" href="../assets/css/owl.css">
     <link rel="stylesheet" href="../assets/css/animate.css">
+    <link rel="stylesheet" href="../assets/css/galeria.css">
+    <link rel="stylesheet" href="../assets/css/logodyc.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 </head>
 
@@ -66,34 +70,6 @@
                                 <span class="rojo">D&C</span> <span class="gris">Cruz</span>
                             </h1>
                         </a>
-                        <style>
-                            @font-face {
-                                font-family: 'Neuropolitical';
-                                src: url('assets/webfonts/neuropolitical-rg.ttf') format('truetype');
-                                font-weight: normal;
-                                font-style: normal;
-                            }
-                            .logo h1 {
-                                display: flex;
-                                gap: 5px;
-                                align-items: center;
-                                justify-content: center;
-                                margin: 0;
-                            }
-                            .logo h1 span {
-                                display: inline;
-                                font-weight: bold;
-                                font-size: 40px;
-                            }
-                            .rojo {
-                                color: red;
-                                font-family: 'Neuropolitical';
-                            }
-                            .gris {
-                                color: #555555;
-                                font-family: 'Neuropolitical';
-                            }
-                        </style>
                         <ul class="nav">
                             <li><a href="../index.html">Inicio</a></li>
                             <li><a href="../preguntas frecuentes.html">Preguntas Frecuentes</a></li>
@@ -113,70 +89,74 @@
     <!-- ***** Header Area End ***** -->
 
     <div class="page-heading header-text">
-        <div class="container" >
+        <div class="container">
             <div class="row">
-                <div class="col-lg-12" >
-                    <span class="breadcrumb"><a href="../index.html">Inicio</a> / <a href="../properties.html">Proyectos</a> / Galería</span>
+                <div class="col-lg-12">
+                    <span class="breadcrumb"><a href="../index.html">Inicio</a> / <a
+                            href="../properties.html">Proyectos</a> / Galería</span>
                     <h3>Álbum del Proyecto</h3>
                 </div>
             </div>
         </div>
-    <div id="galeria-div"></div>
+        <div id="galeria-div"></div>
     </div>
-    
+
     <div class="section properties">
-        <div class="container">
-            <div class="row">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
                 <!-- Galería tipo álbum de fotos para un proyecto específico -->
-                <div class="col-lg-8 offset-lg-2" >
+                <div class="col-12">
+                    <div><h2>Proyecto de comercial</h2></div>
                     <div class="album-gallery">
-                        <div class="main-photo mb-4">
-                            <img id="mainImage" src="../assets/images/banner-01.jpg" alt="Foto principal del proyecto" class="img-thumbnail album-thumb" onclick="changeMainImage(this)" >
-                        </div>
                         <div class="row">
-                            <div class="col-4 mb-3">
-                                <img src="../assets/images/banner-02.jpg" alt="Render 1" class="img-thumbnail album-thumb" onclick="changeMainImage(this)">
-                            </div>
-                            <div class="col-4 mb-3">
-                                <img src="../assets/images/banner-03.jpg" alt="Render 2" class="img-thumbnail album-thumb" onclick="changeMainImage(this)">
-                            </div>
-                            <div class="col-4 mb-3">
-                                <img src="../assets/images/property-06.jpg" alt="Render 3" class="img-thumbnail album-thumb" onclick="changeMainImage(this)">
-                            </div>
-
-                             <div class="col-4 mb-3">
-                                <img src="../assets/images/property-04.jpg" alt="Render 3" class="img-thumbnail album-thumb" onclick="changeMainImage(this)">
-                            </div>
-
-                             <div class="col-4 mb-3">
-                                <img src="../assets/images/property-02.jpg" alt="Render 3" class="img-thumbnail album-thumb" onclick="changeMainImage(this)">
-                            </div>
-
-                             <div class="col-4 mb-3">
-                                <img src="../assets/images/property-01.jpg" alt="Render 3" class="img-thumbnail album-thumb" onclick="changeMainImage(this)">
-                            </div>
-                            <!-- Agrega más imágenes según el proyecto -->
+                            <img src="../assets/images/banner-01.jpg" alt="Render 1" class="album-thumb">
+                            <img src="../assets/images/banner-02.jpg" alt="Render 2" class="album-thumb">
+                            <img src="../assets/images/banner-03.jpg" alt="Render 3" class="album-thumb">
+                            <img src="../assets/images/property-01.jpg" alt="Render 4" class="album-thumb">
+                            <img src="../assets/images/property-02.jpg" alt="Render 5" class="album-thumb">
+                            <img src="../assets/images/property-04.jpg" alt="Render 6" class="album-thumb">
+                            <img src="../assets/images/banner-01.jpg" alt="Render 1" class="album-thumb">
+                            <img src="../assets/images/banner-02.jpg" alt="Render 2" class="album-thumb">
+                            <img src="../assets/images/banner-03.jpg" alt="Render 3" class="album-thumb">
+                            <img src="../assets/images/property-01.jpg" alt="Render 4" class="album-thumb">
+                            <img src="../assets/images/property-02.jpg" alt="Render 5" class="album-thumb">
+                            <img src="../assets/images/property-04.jpg" alt="Render 6" class="album-thumb">
+                            <!-- Agregá más imágenes si querés -->
                         </div>
-                        <div class="project-description mt-4">
-                            <h4>Casa Moderna - Proyecto Habitacional</h4>
-                            <p>
-                                Este proyecto muestra una casa moderna con acabados de lujo, amplios espacios y diseño contemporáneo. 
-                                Explora las imágenes para ver diferentes ángulos y detalles del proyecto.
-                            </p>
+
+                        <div class="project-description">
+                            <h4>Nombre del Proyecto</h4>
+                            <p>Descripción corta y profesional del espacio arquitectónico o proyecto en cuestión.</p>
                         </div>
                     </div>
+
+
+                    <script>
+                        // Marcar el thumbnail activo al cambiar la imagen principal
+                        function changeMainImage(img) {
+                            document.getElementById('mainImage').src = img.src;
+                            document.getElementById('mainImage').alt = img.alt;
+                            document.querySelectorAll('.album-thumb').forEach(function (el) {
+                                el.classList.remove('selected');
+                            });
+                            img.classList.add('selected');
+                        }
+                    </script>
                 </div>
-<script>
-    // Al cargar la página, hacer scroll automático al div de la galería
-    document.addEventListener('DOMContentLoaded', function() {
-        var galeriaDiv = document.getElementById('galeria-div');
-        if (galeriaDiv) {
-            galeriaDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-    });
-</script>
             </div>
         </div>
+    </div>
+    <script>
+        // Al cargar la página, hacer scroll automático al div de la galería
+        document.addEventListener('DOMContentLoaded', function () {
+            var galeriaDiv = document.getElementById('galeria-div');
+            if (galeriaDiv) {
+                galeriaDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    </script>
+    </div>
+    </div>
     </div>
 
     <footer>
@@ -194,26 +174,43 @@
     <script src="../assets/js/owl-carousel.js"></script>
     <script src="../assets/js/counter.js"></script>
     <script src="../assets/js/custom.js"></script>
+    <script src="../assets/js/galeria.js"></script>
     <script>
-        // Efecto de zoom al pasar el cursor por las miniaturas
-        document.addEventListener('DOMContentLoaded', function() {
+        // Efecto de zoom al pasar el cursor por las miniaturas con icono de aumentar
+        document.addEventListener('DOMContentLoaded', function () {
             const thumbs = document.querySelectorAll('.album-thumb');
-            thumbs.forEach(function(thumb) {
-                thumb.style.transition = 'transform 0.2s';
-                thumb.addEventListener('mouseenter', function() {
-                    this.style.transform = 'scale(1.2)';
-                    this.style.zIndex = '10';
-                });
-                thumb.addEventListener('mouseleave', function() {
-                    this.style.transform = 'scale(1)';
-                    this.style.zIndex = '';
-                });
+            thumbs.forEach(function (thumb) {
+                // Crear icono de aumentar (lupa) solo si no existe ya
+                if (!thumb.parentElement.querySelector('.zoom-icon-album')) {
+                    const zoomIcon = document.createElement('span');
+                    zoomIcon.innerHTML = '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" style="pointer-events:none;"><circle cx="11" cy="11" r="7" stroke="#ff4d4f" stroke-width="2"/><line x1="16.5" y1="16.5" x2="21" y2="21" stroke="#ff4d4f" stroke-width="2" stroke-linecap="round"/></svg>';
+                    zoomIcon.style.position = 'absolute';
+                    zoomIcon.style.top = '50%';
+                    zoomIcon.style.left = '50%';
+                    zoomIcon.style.transform = 'translate(-50%, -50%) scale(0.8)';
+                    zoomIcon.style.opacity = '0';
+                    zoomIcon.style.transition = 'opacity 0.18s, transform 0.18s';
+                    zoomIcon.style.pointerEvents = 'none';
+                    zoomIcon.className = 'zoom-icon-album';
+                    // Contenedor relativo para el icono
+                    thumb.parentElement.style.position = 'relative';
+                    thumb.parentElement.appendChild(zoomIcon);
+
+                    thumb.addEventListener('mouseenter', function () {
+                        zoomIcon.style.opacity = '1';
+                        zoomIcon.style.transform = 'translate(-50%, -50%) scale(1)';
+                    });
+                    thumb.addEventListener('mouseleave', function () {
+                        zoomIcon.style.opacity = '0';
+                        zoomIcon.style.transform = 'translate(-50%, -50%) scale(0.8)';
+                    });
+                }
                 thumb.style.cursor = 'pointer';
             });
         });
 
         // Lightbox simple con navegación por flechas
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const images = Array.from(document.querySelectorAll('.album-thumb'));
             let currentIndex = 0;
 
@@ -231,10 +228,10 @@
             lightbox.style.alignItems = 'center';
             lightbox.style.zIndex = '9999';
             lightbox.innerHTML = `
-                <span id="close-lightbox" style="position:absolute;top:30px;right:40px;font-size:40px;color:#fff;cursor:pointer;">&times;</span>
-                <span id="prev-lightbox" style="position:absolute;top:50%;left:40px;font-size:60px;color:#fff;cursor:pointer;user-select:none;">&#10094;</span>
-                <img id="lightbox-img" src="" alt="" style="max-width:80vw;max-height:80vh;border-radius:10px;box-shadow:0 0 30px #000;">
-                <span id="next-lightbox" style="position:absolute;top:50%;right:40px;font-size:60px;color:#fff;cursor:pointer;user-select:none;">&#10095;</span>
+            <span id="close-lightbox" style="position:absolute;top:30px;right:40px;font-size:40px;color:#fff;cursor:pointer;">&times;</span>
+            <span id="prev-lightbox" style="position:absolute;top:50%;left:40px;font-size:60px;color:#fff;cursor:pointer;user-select:none;">&#10094;</span>
+            <img id="lightbox-img" src="" alt="" style="max-width:80vw;max-height:80vh;border-radius:10px;box-shadow:0 0 30px #000;">
+            <span id="next-lightbox" style="position:absolute;top:50%;right:40px;font-size:60px;color:#fff;cursor:pointer;user-select:none;">&#10095;</span>
             `;
             document.body.appendChild(lightbox);
 
@@ -247,36 +244,36 @@
             }
 
             images.forEach((img, idx) => {
-                img.addEventListener('click', function() {
+                img.addEventListener('click', function () {
                     showLightbox(idx);
                 });
             });
 
-            document.getElementById('close-lightbox').onclick = function() {
+            document.getElementById('close-lightbox').onclick = function () {
                 lightbox.style.display = 'none';
             };
 
-            document.getElementById('prev-lightbox').onclick = function(e) {
+            document.getElementById('prev-lightbox').onclick = function (e) {
                 e.stopPropagation();
                 currentIndex = (currentIndex - 1 + images.length) % images.length;
                 showLightbox(currentIndex);
             };
 
-            document.getElementById('next-lightbox').onclick = function(e) {
+            document.getElementById('next-lightbox').onclick = function (e) {
                 e.stopPropagation();
                 currentIndex = (currentIndex + 1) % images.length;
                 showLightbox(currentIndex);
             };
 
             // Cerrar lightbox al hacer click fuera de la imagen
-            lightbox.addEventListener('click', function(e) {
+            lightbox.addEventListener('click', function (e) {
                 if (e.target === lightbox) {
                     lightbox.style.display = 'none';
                 }
             });
 
             // Navegación con flechas del teclado
-            document.addEventListener('keydown', function(e) {
+            document.addEventListener('keydown', function (e) {
                 if (lightbox.style.display === 'flex') {
                     if (e.key === 'ArrowLeft') {
                         currentIndex = (currentIndex - 1 + images.length) % images.length;
@@ -291,11 +288,11 @@
             });
         });
         // Cambia la imagen principal al hacer clic en una miniatura
-        function changeMainImage(img) {
-            document.getElementById('mainImage').src = img.src;
-            document.getElementById('mainImage').alt = img.alt;
-        }
+        // function changeMainImage(img) {
+        //     document.getElementById('mainImage').src = img.src;
+        //     document.getElementById('mainImage').alt = img.alt;
+        // }
     </script>
 </body>
-</html>
 
+</html>

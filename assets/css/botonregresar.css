@@ -1,0 +1,19 @@
+.btn-anaranjado {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #ff6f00;
+  border: 2px solid #ff6f00;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  backdrop-filter: blur(2px);
+  transition: all 0.3s ease;
+}
+
+.btn-anaranjado:hover {
+  background-color: #ff6f00;
+  color: white;
+  box-shadow: 0 0 10px rgba(255, 111, 0, 0.5);
+  transform: scale(1.05);
+}
