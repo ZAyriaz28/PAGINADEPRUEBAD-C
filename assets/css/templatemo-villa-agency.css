@@ -102,6 +102,16 @@ h1, h4, h5, h6 {
   word-wrap: break-word;
 }
 
+h2.contorno {
+  color: white; /* o el color que quieras para el texto principal */
+  text-shadow:
+    -2px -2px 0 #000,
+     2px -2px 0 #000,
+    -2px  2px 0 #000,
+     2px  2px 0 #000,
+    0px  0px 5px #000; /* un ligero difuminado opcional */
+}
+
 h2 {
   text-align: center;
   color: #1e1e1e;           /* Color sobrio y profesional */
@@ -796,16 +806,55 @@ Banner Style
 }
 
 .main-banner .item-1 {
-  background-image: url(../images/banner-01.jpg);
+  background-image: url("https://lh3.googleusercontent.com/p/AF1QipPW6AYXThBdcr_Z_dBUzCV0sVvGydfZpWmH2ODt=w4000-h1848");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 80vh;       /* Puedes ajustar la altura según necesites */
+  min-height: 400px;  /* Altura mínima para que siempre se vea bien */
 }
 
 .main-banner .item-2 {
-  background-image: url(../images/banner-02.jpg);
+  background-image: url("https://lh3.googleusercontent.com/p/AF1QipNh_hBuwLS3WsODPSmvNW3OE7u1vno7drmnYYjT=w4000-h1848");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 80vh;
+  min-height: 400px;
 }
 
 .main-banner .item-3 {
-  background-image: url(../images/banner-03.jpg);
+  background-image: url("https://lh3.googleusercontent.com/p/AF1QipNRksHy-Ani6spvqk3ANPXISqu7X_gI7i8eNehT=w4032-h3024");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 80vh;
+  min-height: 400px;
 }
+
+/* ✅ Responsivo para móviles */
+@media (max-width: 768px) {
+  .main-banner .item {
+    height: 50vh;         /* altura más pequeña en móviles */
+    padding: 0 10%;       /* menos padding lateral en móviles */
+  }
+
+  .main-banner .item-1,
+  .main-banner .item-2,
+  .main-banner .item-3 {
+    height: 50vh;         /* menor altura para los banners en móvil */
+    min-height: 250px;    /* asegura que no se vean demasiado pequeños */
+  }
+}
+
+
+.owl-carousel {
+  will-change: transform;
+}
+
 
 .main-banner .item span.category {
   background-color: #fff;
@@ -827,10 +876,19 @@ Banner Style
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
-  color: #fff;
+  color: #ffffff;
   line-height: 50px;
   width: 50%;
   margin-bottom: 0px;
+}
+
+/* Ajuste para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  .main-banner .item h2 {
+    font-size: 24px;     /* letra más pequeña */
+    line-height: 32px;   /* menos espacio entre líneas */
+    width: 90%;          /* ocupa más ancho en móvil */
+  }
 }
 
 .main-banner .owl-dots {
